@@ -28,7 +28,7 @@ const Nav = () => {
             <div className="flex flex-row md:flex-col w-full h-full justify-between md:w-auto">
                 <div id="nav" className="flex flex-row md:flex-col text-sm">
                 {navItems.map((item, index) => (
-                    <Link key={index} id={location.pathname === item.path ? 'active' : null} to={item.path} className={index === 0 ? "flex flex-row items-center p-4 border-t-[1px]" : "flex flex-row items-center p-4 border-y-[1px]"}>
+                    <Link key={index} id="active" to={item.path} className={index === 0 ? "flex flex-row items-center p-4 border-t-[1px]" : "flex flex-row items-center p-4 border-y-[1px]"}>
                         <div className="mr-2 hidden md:block">{item.icon}</div>
                         {item.name}
                     </Link>
